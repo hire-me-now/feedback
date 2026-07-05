@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Questions & ideas (Discussions)
+    url: https://github.com/hire-me-now/feedback/discussions
+    about: For questions, ideas, and general feedback that isn't a specific bug or request.
+  - name: 🚀 Try the app
+    url: https://resume.hire-me.now
+    about: The resume builder itself.
