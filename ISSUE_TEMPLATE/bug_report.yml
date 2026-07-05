@@ -1,0 +1,51 @@
+name: 🐞 Bug report
+description: Something's broken or behaving wrong
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for the report. The more specific, the faster it gets fixed.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+      placeholder: I clicked … and …
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where?
+      options:
+        - Resume builder (/builder)
+        - Create from scratch (/builder/new)
+        - Recruiter search / outreach
+        - PDF / rendering
+        - Landing page
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: provider
+    attributes:
+      label: AI provider (if relevant)
+      options:
+        - Not relevant
+        - Claude
+        - OpenAI
+  - type: input
+    id: env
+    attributes:
+      label: Browser / OS
+      placeholder: Chrome 120 on Windows 11
+  - type: textarea
+    id: console
+    attributes:
+      label: Console errors (optional)
+      description: DevTools (F12) → Console → paste any red errors.
+      render: shell
+  - type: markdown
+    attributes:
+      value: "⚠️ This repo is public — don't paste your API key or private data."
